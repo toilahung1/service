@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 91px;
+    gap: 100px;
+    margin: 0;
+    padding-right: 0;
+
+    position: absolute;
+    width: 1812px;
+    height: 80px;
+    z-index: 1;
+    
+    top: 0px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*List bên trong Menu */
+.list {
+    display: flex;
+    list-style-type: none;
+}
+
+ul.list li a {
+    
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    color: inherit; /* Thừa kế màu của phần tử cha hoặc chọn màu sắc khác nếu cần */
+    font-family: 'Afacad';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #676767;
+    margin-right: 70px;
+}
+
+ul.list li a:hover {
+    color: #0596FF; /* Màu sắc thay đổi khi di chuột vào liên kết */
+}
+
+/* Logo */
+.menu-logo {
+    width: 225.93px;
+    height: 56px;
+    /* Các thuộc tính khác cho logo */
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Inside auto layout for menu */
+.menu-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+    width: 919px;
+    height: 48px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    
+
+    width: 131px;
+    height: 48px;
+    white-space: nowrap;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: #0596FF;
+
+    background: linear-gradient(77.91deg, #323CEB 5.47%, #0596FF 67.76%);
+    border-radius: 12px;
+
+    cursor: pointer;
+   
+}
+
+.cta-button:hover {
+    background: linear-gradient(77.91deg, #262ca7 5.47%, #056db8 67.76%);
+}
+
+/* Frame 2 */
+.frame-2 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 88px;
+    height: 40px;
+    
+}
+
+/* vietnamese, english */
+
+.lang-logo{
+width: 40px;
+height: 40px;
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+/* Group */
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+} 
+
+
+/*Sắp xếp phần content*/
+.all-content {
+    margin-top: 80px;
+}
+
+/* Content */
+.verify {
+    /* Banner background 2 1 */
+
+    position: absolute;
+    width: 100%; /* Đảm bảo banner chiếm toàn bộ chiều rộng màn hình */
+    height: 700px; /* Bạn có thể điều chỉnh chiều cao của banner */
+    left: 0; /* Đảm bảo ảnh bắt đầu từ bên trái */
+    top: 80px; /* Vị trí banner từ trên xuống */
+
+    background: url(./img/hero-banner.png) no-repeat center center; /* Lấy ảnh nền và căn giữa */
+    background-size: cover; /* Đảm bảo ảnh phủ đầy toàn bộ chiều rộng và chiều cao */
+}
+
+
+
+
+/* Auto layout */
+/* Col1 */
+.col1{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 44px;
+
+position: absolute;
+width: 560px;
+height: 340px;
+left: 144px;
+top: 119px;
+}
+
+.row1 {
+    /* Xác minh tích xanh */
+    width: 560px;
+    height: auto; /* Thay vì 36px, cho phép chiều cao thay đổi tùy theo kích thước văn bản */
+    
+    font-family: 'Afacad';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2; /* Điều chỉnh line-height để không bị che mất chữ */
+    display: flex;
+    align-items: center; /* Sử dụng center thay vì flex-end để căn giữa văn bản */
+    
+    /* Màu chữ highlight */
+    background: linear-gradient(90deg, #323CEB 0%, #0596FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.row2 {
+    /* Xác minh tích xanh không chỉ mang ý nghĩa về uy tín mà còn giúp nâng cao khả năng tiếp cận với khách hàng. Việc xác minh tài khoản là một phần quan trọng trong chiến lược xây dựng thương hiệu và bảo vệ uy tín trực tuyến. */
+
+width: 560px;
+height: 180px;
+
+font-family: 'Afacad';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+/* or 120% */
+text-align: justify;
+
+color: #7A7878;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.row3 {
+/* CTA trắng */
+margin-top: 60px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 32px;
+gap: 10px;
+
+width: 231px;
+height: 48px;
+
+background: linear-gradient(223.84deg, #FFFFFF 15.79%, #E9F6FF 88.83%);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.consult {
+    /* ĐĂNG KÝ TƯ VẤN */
+    width: auto; /* Sử dụng 'auto' thay vì cố định chiều rộng */
+    height: auto; /* Sử dụng 'auto' thay vì cố định chiều cao */
+
+    font-family: 'Afacad';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px; /* Giữ khoảng cách giữa các dòng */
+
+    /* Điều chỉnh để văn bản không bị cắt */
+    display: inline-block; /* Sử dụng 'inline-block' để đảm bảo phần tử có kích thước linh hoạt */
+    white-space: nowrap; /* Ngăn không cho văn bản xuống dòng */
+
+    /* Màu chữ highlight */
+    background: linear-gradient(90deg, #323CEB 0%, #0596FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*col 2*/
+/* xác minh tích xanh web 1 */
+.tick {
+    position: absolute;
+    width: 700px;
+    height: 660px;
+    left: 920px;
+    top: -3px;
+
+    /* Căn giữa ảnh trong phần tử */
+    background: url(./img/xac-minh-tick-xanh-web.png) no-repeat center center;
+    background-size: contain; /* Giữ tỷ lệ của ảnh và làm ảnh vừa vặn trong phần tử */
+    background-position: center; /* Căn giữa ảnh trong phần tử */
+}
+
+/*khái niệm*/
+.notion {
+    /* Khái niệm */
+
+position: absolute;
+width: 100%;
+height: 550px;
+left: 0;
+top: 780px;
+
+background: linear-gradient(270deg, #EEF3FE 45.31%, #F3FBFE 100%);
+
+}
+
+
+
+/* title */
+
+.title {
+    position: absolute;
+    width: 468px;
+    height: 48px;
+    left: 733px;
+    top: 120px;
+    margin-left: 250px;
+    
+    font-family: 'Afacad';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.25px;
+    
+    color: #323CEB;
+}
+
+.description {
+/* Xác minh tích xanh là biểu tượng được cấp bởi các nền tảng mạng xã hội, thường là một dấu kiểm màu xanh bên cạnh tên tài khoản của một cá nhân, doanh nghiệp hoặc thương hiệu. Đây là dấu hiệu chính thức xác nhận tài khoản đó là thật và đáng tin cậy, được cấp sau khi chủ tài khoản hoàn tất quy trình xác minh theo yêu cầu của nền tảng. Hiện nay, các nền tảng như Facebook, Instagram, và Tiktok đều cung cấp dịch vụ này nhằm hỗ trợ bảo vệ và tăng cường niềm tin cho tài khoản. */
+
+position: absolute;
+width: 560px;
+height: 243px;
+left: 984px;
+top: 250px;
+
+font-family: 'Afacad';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+text-align: justify;
+
+color: #676767;
+}
+
+.phone {
+    background-size: contain; /* Đảm bảo ảnh giữ nguyên tỷ lệ và vừa vặn trong phần tử */
+    position: absolute;
+    width: 708px;
+    height: 531px;
+    left: 0px;
+    top: 30px;
+}
+
+
+/*section 3*/
+.why {
+/* Lý do */
+
+position: absolute;
+width: 100%;
+height: 1588px;
+left: 0;
+top: 1330px;
+ 
+background: hsla(0, 0%, 100%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 54%, hsla(221, 89%, 96%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 54%, hsla(221, 89%, 96%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 54%, hsla(221, 89%, 96%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#EEF3FE", GradientType=1 );
+
+}
+
+
+.why-text {
+    /* Frame 48096416 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 52px;
+
+position: absolute;
+width: 760px;
+height: 260px;
+left: calc(50% - 760px/2);
+top: 94px;
+}
+
+.why-title {
+    /* title */
+
+width: 760px;
+height: 96px;
+
+font-family: 'Afacad';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+text-align: center;
+letter-spacing: 0.25px;
+
+color: #323CEB;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.why-des {
+    /* Với sự phát triển mạnh mẽ của các nền tảng mạng xã hội, nhiều doanh nghiệp và cá nhân đã tận dụng chúng để xây dựng thương hiệu và kết nối với khách hàng. Tuy nhiên, không ít tài khoản giả mạo xuất hiện, ảnh hưởng đến uy tín và hình ảnh. Việc sở hữu tích xanh mang lại những lợi ích cụ thể sau: */
+
+width: 760px;
+height: 112px;
+
+font-family: 'Afacad';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+/* or 28px */
+text-align: center;
+
+color: #676767;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.why-list {
+    /* Frame 48096349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 808px;
+height: 976px;
+left: 316px;
+top: 398px;
+
+margin-left: 11.2%
+
+
+}
+
+.list1, .list2, .list3, .list4, .list5 {
+    /* Lý do */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 12px;
+
+width: 808px;
+height: 176px;
+
+background: #EEF3FE;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+
+
+
+
+
+
+
